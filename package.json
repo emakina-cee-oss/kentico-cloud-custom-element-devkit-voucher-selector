@@ -1,0 +1,73 @@
+{
+  "name": "custom-element-devkit",
+  "version": "0.0.1",
+  "description": "A custom element devkit for Kentico Cloud the headless CMS in the cloud.",
+  "main": "server/index.ts",
+  "scripts": {
+    "build": "ts-node -T server/index.ts -cjsm",
+    "start": "ts-node -T server/index.ts",
+    "start-watcher": "ts-node -T server/index.ts -wh",
+    "tslint": "tslint --project tsconfig.json -e \"./**/test/**\" -e \"./node_modules/**\" \"./**/*.ts?(x)\"",
+    "typecheck": "tsc --noEmit --project tsconfig.json",
+    "typewatch": "tsc --noEmit --project tsconfig.json -w"
+  },
+  "keywords": [
+    "kentico",
+    "kentico cloud",
+    "custom element"
+  ],
+  "engines": {
+    "npm": "6.1.0",
+    "node": "10.6.0"
+  },
+  "author": "Viclick",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.1",
+    "@babel/plugin-transform-async-to-generator": "^7.2.0",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.1.0",
+    "@types/express": "^4.16.1",
+    "@types/node": "^10.12.21",
+    "@types/react": "^16.7.22",
+    "@types/react-dom": "^16.0.11",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/webpack": "^4.4.24",
+    "@types/webpack-env": "^1.13.7",
+    "autoprefixer": "^9.4.7",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "csstype": "^2.6.2",
+    "express": "^4.16.4",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "pug": "^2.0.3",
+    "react-set-state-usage": "^2.0.1",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "ts-node": "^8.0.2",
+    "tslint": "^5.12.1",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.3.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.0",
+    "x-data-spreadsheet": "^1.0.3"
+  },
+  "dependencies": {
+    "commander": "^2.19.0",
+    "file-loader": "^3.0.1",
+    "kentico-cloud-delivery": "^5.7.2",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.26",
+    "rxjs": "^6.5.2"
+  }
+}

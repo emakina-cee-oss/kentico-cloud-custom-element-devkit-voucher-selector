@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap');
+
+body {
+	margin: 0;
+  font-family: Raleway, Arial, sans-serif;
+}
+
+.voucher-list {
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  max-height: 750px;
+  overflow-y: scroll;
+}
+
+.tile-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tile-grid.tiles {
+  display: none;
+}
+
+.tile-grid.tiles.selected {
+  display: flex;
+}
+
+.tile-grid .voucher {
+  width: 240px;
+  min-height: 240px;
+  padding: 10px;
+  display: flex;
+  flex-flow: wrap;
+
+}
+
+.tile-grid .voucher .voucher-inner {
+  padding: 5px;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.20);
+}
+
+.tile-grid .voucher .json-data {
+  display: none;
+}
+
+.voucher .voucher-image {
+  position: relative;
+  width: 100%;
+}
+
+.tile-grid .voucher img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.voucher .voucher-title {
+  display: block;
+  font-weight: 800;
+  font-size: 16px;
+  margin: 5px 0 5px;
+  min-height: 36px;
+
+  color: #D14124;
+}
+
+.voucher .voucher-partner, .voucher .voucher-promotion, .voucher .voucher-expiration {
+  margin: 5px 0;
+}
+
+.drawer {
+  display: block;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+
+}
+
+.tab-item {
+  padding: 5px 10px 5px 10px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  background: #E7E7E7;
+  font-weight: 800;
+  margin: 5px 5px;
+  cursor: pointer;
+}
+
+.tab-item.selected {
+  background: #D14124;
+  border-radius: 2px;
+  color: #ffffff;
+}
+
+.vouchers-json {
+  display: none;
+}
+
+.button-container {
+  text-align: center;
+  margin: 20px auto 10px;
+}
+
+button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  border: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border-width: 2px;
+  cursor: pointer;
+}
+
+button.js-add-voucher {
+  background-color: #44CF46;
+  color: #ffffff;
+}
+
+button.js-add-voucher:hover {
+  background-color: #33AD35;
+}
+
+button.js-remove-voucher {
+  background-color: #D14124;
+  color: #ffffff;
+}
+
+button.js-remove-voucher:hover {
+  background-color: #d12300;
+}

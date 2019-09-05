@@ -1,0 +1,38 @@
+doctype html
+html
+  head(lang='en')
+    meta(charset='UTF-8')
+    title !{title}
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes')
+    // styles
+    block stylesheet
+      if(stylesheetSrc)
+        link(rel='stylesheet', href=stylesheetSrc)
+      else
+        style
+          | !{inlineStylesheet}
+    script(src=customElementApiScriptSrc)
+
+    if(initialValue || config)
+      script.
+        window.customElement = {};
+    if(initialValue)
+      script.
+        window.customElement.initialValue = `!{JSON.stringify(initialValue, null, 2)}`;
+    if(config)
+      script.
+        window.customElement.config = JSON.parse(`!{JSON.stringify(config, null, 2)}`);
+
+    block head-extension
+
+  body
+    block content
+      .content
+    block overlay
+      .overlay
+    block script
+      if(scriptSrc)
+        script(src=scriptSrc)
+      else
+        script
+          | !{inlineScript}

@@ -1,0 +1,14 @@
+﻿extends ../../../server/views/custom-element-layout
+
+
+block head-extension
+  - var title = 'Color Picker';
+  script(src='https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js')
+
+block content
+  // Custom element HTML
+  h1.pending Loading vouchers...
+  .drawer
+  .vouchers
+    h2 Chosen Vouchers:
+    .voucher-preview
