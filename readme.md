@@ -5,10 +5,13 @@ This is the devkit for the Kentico Cloud Custom Element Voucher Picker for the j
 The code for the custom element is found in `client/custom-elements/kentico-cloud-custom-voucher-selector/`;
 
 
+## Build:
+To build the project, run `npm run build` and then copy the contents of `/built/custom-elements/kentico-cloud-custom-voucher-selector/` and update the build repository [here](https://github.com/emakina-cee-oss/kentico-cloud-custom-element-voucher-selector-build).
+
+
 *TODO:*
 - Document how to import API keys
 - Document how to import in the CMS
-- Document how to build and update the public facing repo for the element
 
 --------
 
