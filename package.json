@@ -67,7 +67,7 @@
     "file-loader": "^3.0.1",
     "kentico-cloud-delivery": "^5.7.2",
     "moment": "^2.24.0",
-    "moment-timezone": "^0.5.26",
+    "moment-timezone": "^0.5.35",
     "rxjs": "^6.5.2"
   }
 }
